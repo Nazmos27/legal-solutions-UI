@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+                btncolor: '#B68C5A',
+        },
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+
+</head>
+<body>
+    
+<nav class=" bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-white">
+    <div class="md:px-2 md:justify-center container flex flex-wrap items-center justify-between mx-auto ">
+      <a href="https://flowbite.com/" class="flex items-center">
+          <img src="./images/logo2.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="md:items-center flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-white dark:border-gray-700">
+          <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Cases</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+          </li>
+          <li>
+            <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="md:ml-10 block text-white bg-btncolor hover:bg-btncolor focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-btncolor dark:hover:bg-btncolor dark:focus:ring-blue-800" type="button">Free Consultation
+            </button>
+            <div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+              <div class="relative w-full h-full max-w-2xl md:h-auto">
+                  <!-- Modal content -->
+                  <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                      <!-- Modal header -->
+                      <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                              Terms of Service
+                          </h3>
+                          <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
+                              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                              <span class="sr-only">Close modal</span>
+                          </button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="p-6 space-y-6">
+                          <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                              With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                          </p>
+                          <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                              The European Union's General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                          </p>
+                      </div>
+                      <!-- Modal footer -->
+                      <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                          <button data-modal-hide="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
+                          <button data-modal-hide="defaultModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="md:bg-cover md:mx-48 md:h-96 bg-no-repeat bg-[url('./images/banner.png')] h-48 m-4 bg-contain">
+    <p class="md:text-5xl md:font-black md:pt-12 md:leading-snug text-center text-white text-xl py-2">We Provide Effective <br> Legal Solutions</p>
+    <p class="md:px-36 md:py-2 md:text-sm text-center text-white text-xs">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    <div class=" md:space-x-4  md:w-full md:flex md:items-center md:justify-center mb-6 ">
+        <label class="relative block pt-10">
+            <span class="sr-only">Search</span>
+            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+              <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+            </span>
+            <input class="   placeholder:text-slate-400 block bg-white w-full md:w-[400px] border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search Your Services" type="text" name="search"/>
+          </label>
+        <button class="px-2 py-2 text-white bg-btncolor rounded-md ml-36 my-3 md:mt-12 md:px-3 md:font-medium">Search</button>
+    </div>
+  </header>
+
+  <main class="my-28 px-3">
+    <div >
+      <p class="md:text-3xl md:pb-8 font-bold text-xl text-gray-700 text-center">The Legal Practice Area</p>
+      <p class="md:px-72 md:pb-20 md:text-sm pb-4 text-sm text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    </div>
+    <div class="md:grid md:grid-cols-3 md:px-36 space-y-4">
+      <div class="md:space-y-6 md:mx-0 md:px-5 md:pb-2 py-4 mx-6 border-gray-400 md:rounded-none md:border-0 md:border-b-2 md:border-r-2 border-2 rounded-lg hover:bg-gray-200 ">
+        <img src="./images/business.png" alt="" class="mx-auto h-14 w-14">
+        <p class="text-lg font-bold text-gray-700 text-center">Busieness Law</p>
+        <p class="px-10 text-xs text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <img src="./images/Frame.png" alt="" class="m-auto pt-2">
+      </div>
+      <div class="md:space-y-6 md:mx-0 md:px-5 md:border-b-2 md:border-0 md:rounded-none py-4 mx-6 border-gray-400 border-2 rounded-lg hover:bg-gray-200" style="margin-top: 0px;">
+        <img src="./images/criminal.png" alt="" class="mx-auto h-14 w-14">
+        <p class="text-lg font-bold text-gray-700 text-center">Criminal Law</p>
+        <p class="px-10 text-xs text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <img src="./images/Frame.png" alt="" class="m-auto pt-2">
+      </div>
+      <div class="md:space-y-6 md:mx-0 md:px-5 py-4 mx-6 border-gray-400 md:border-b-2 md:border-l-2 md:border-0 md:rounded-none border-2 rounded-lg hover:bg-gray-200" style="margin-top: 0px;">
+        <img src="./images/child.png" alt="" class="m-auto h-14 w-14">
+        <p class="text-lg font-bold text-gray-700 text-center">Child Support</p>
+        <p class="px-10 text-xs text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <img src="./images/Frame.png" alt="" class="mx-auto pt-2">
+      </div>
+      <div class="md:space-y-6 md:mx-0 md:px-5 md:pt-10 py-4 mx-6 md:border-0 md:border-r-2 md:rounded-none border-gray-400 border-2 rounded-lg hover:bg-gray-200" style="margin-top: 0px;">
+        <img src="./images/education.png" alt="" class="mx-auto h-14 w-14">
+        <p class="text-lg font-bold text-gray-700 text-center">Education Law</p>
+        <p class="px-10 text-xs text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <img src="./images/Frame.png" alt="" class="m-auto pt-2">
+      </div>
+      <div class="md:mx-0 md:space-y-6 md:px-5 md:pt-10 md:border-0 md:rounded-none py-4 mx-6 border-gray-400 border-2 rounded-lg hover:bg-gray-200" style="margin-top: 0px;">
+        <img src="./images/divorce.png" alt="" class="mx-auto h-14 w-14">
+        <p class="text-lg font-bold text-gray-700 text-center">Divorce Law</p>
+        <p class="px-10 text-xs text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <img src="./images/Frame.png" alt="" class="m-auto pt-2">
+      </div>
+      <div class=" md:mx-0 md:space-y-6 md:mt-0 md:px-5 md:pt-10 py-4 mx-6 md:border-0 md:border-l-2 md:rounded-none border-gray-400 border-2 rounded-lg hover:bg-gray-200" style="margin-top: 0px;">
+        <img src="./images/tax.png" alt="" class="mx-auto h-14 w-14">
+        <p class="text-lg font-bold text-gray-700 text-center">Tax Law</p>
+        <p class="px-10 text-xs text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <img src="./images/Frame.png" alt="" class="m-auto pt-2">
+      </div>
+      
+    </div>
+  </main>
+
+
+
+  <section>
+    <div>
+      <p class="font-bold text-xl text-gray-700 text-center">What Our Client Say</p>
+      <p class="pb-4 text-sm text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    </div>
+    <!-- caroussal section -->
+    <div class="mx-4 my-3">
+      
+      <div id="indicators-carousel" class="relative rounded-lg" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <img src="./images/slider-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./images/slider-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./images/slider-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- accordion section -->
+
+  <div class="mx-4 my-20">
+    <div class="space-y-2">
+      <p class="font-bold text-xl text-gray-700 text-center">Frequently Asked Any Question</p>
+      <p class="px-4 pb-4 text-sm text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    </div>
+    <div class="flex flex-col-reverse ">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item bg-white border border-gray-200">
+          <h2 class="accordion-header mb-0" id="headingOne">
+            <button class="
+              accordion-button
+              relative
+              flex
+              items-center
+              w-full
+              py-4
+              px-5
+              text-base text-gray-800 text-left
+              bg-white
+              border-0
+              rounded-none
+              transition
+              focus:outline-none
+            " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body py-4 px-5">
+              <strong>This is the first item's accordion body.</strong> It is shown by default,
+              until the collapse plugin adds the appropriate classes that we use to style each
+              element. These classes control the overall appearance, as well as the showing and
+              hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our default variables. It's also worth noting that just about any HTML can go within
+              the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-white border border-gray-200">
+          <h2 class="accordion-header mb-0" id="headingTwo">
+            <button class="
+              accordion-button
+              collapsed
+              relative
+              flex
+              items-center
+              w-full
+              py-4
+              px-5
+              text-base text-gray-800 text-left
+              bg-white
+              border-0
+              rounded-none
+              transition
+              focus:outline-none
+            " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+              aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body py-4 px-5">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default,
+              until the collapse plugin adds the appropriate classes that we use to style each
+              element. These classes control the overall appearance, as well as the showing and
+              hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our default variables. It's also worth noting that just about any HTML can go within
+              the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-white border border-gray-200">
+          <h2 class="accordion-header mb-0" id="headingThree">
+            <button class="
+              accordion-button
+              collapsed
+              relative
+              flex
+              items-center
+              w-full
+              py-4
+              px-5
+              text-base text-gray-800 text-left
+              bg-white
+              border-0
+              rounded-none
+              transition
+              focus:outline-none
+            " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+              aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body py-4 px-5">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default,
+              until the collapse plugin adds the appropriate classes that we use to style each
+              element. These classes control the overall appearance, as well as the showing and
+              hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our default variables. It's also worth noting that just about any HTML can go within
+              the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./images/faq.png" alt="" class="pb-4">
+    </div>
+
+  </div>
+
+  <!-- information sectiom -->
+
+  <div>
+    <div>
+      <p class="font-bold text-xl text-gray-700 text-center">Frequently Asked Any Question</p>
+      <p class="px-4 pb-4 text-sm text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    </div>
+    <div class="grid grid-cols-2 px-10">
+      <div class="border-gray-400 border-r-2 border-b-2 h-36 w-36">
+        <img src="./images/location.png" alt="" class="mx-auto my-2">
+        <p class="text-center">Adress</p>
+        <p class="px-2 pb-4 text-xs text-gray-700 text-center">A108 Adam Street,
+          New York, NY 535022</p>
+      </div>
+      <div class="border-gray-400 border-b-2  h-36 w-36">
+        <img src="./images/call.png" alt="" class="mx-auto my-2">
+        <p class="text-center">Call Us</p>
+        <p class="px-2 pb-4 text-xs text-gray-700 text-center">A108 Adam Street,
+          New York, NY 535022</p>
+      </div>
+      <div class="border-gray-400 border-r-2 h-36 w-36">
+        <img src="./images/email.png" alt="" class="mx-auto my-2">
+        <p class="text-center">Email Us</p>
+        <p class="px-2 pb-4 text-xs text-gray-700 text-center">A108 Adam Street,
+          New York, NY 535022</p>
+      </div>
+      <div class="border-gray-400  h-36 w-36">
+        <img src="./images/time.png" alt="" class="mx-auto my-2">
+        <p class="text-center">Working Hours</p>
+        <p class="px-2 pb-4 text-xs text-gray-700 text-center">A108 Adam Street,
+          New York, NY 535022</p>
+      </div>
+    </div>
+    <div class="space-y-4 py-6">
+      <label class="relative block w-3/4 mx-auto">
+        <span class="sr-only">Search</span>
+        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+          <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+        </span>
+        <input class="  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Your Name" type="text" name="search"/>
+      </label>
+      <label class="relative block w-3/4 mx-auto">
+        <span class="sr-only">Search</span>
+        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+          <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+        </span>
+        <input class="  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Your Email" type="text" name="search"/>
+      </label>
+      <label class="relative block w-3/4 mx-auto">
+        <span class="sr-only">Search</span>
+        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+          <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+        </span>
+        <input class="  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Subject" type="text" name="search"/>
+      </label>
+      <label class="relative block w-3/4 mx-auto">
+        <span class="sr-only">Search</span>
+        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+          <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+        </span>
+        <input class="  placeholder:text-slate-400 block bg-white w-full h-24 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Message" type="text" name="search"/>
+      </label>
+      <button class=" py-2 text-white bg-btncolor rounded-md ml-11 my-3 w-3/4">Send Messeges</button>
+    </div>
+  </div>
+
+
+  <!-- Footer section -->
+
+<footer class="p-4 bg-white sm:p-6 dark:bg-gray-900">
+  <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+          <a href="https://flowbite.com/" class="flex items-center">
+              <img src="./images/logo.png" class="h-8 mx-auto" alt="FlowBite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              </span>
+             
+          </a>
+          <p class="text-white text-xs pt-4 px-5 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Links</h2>
+              <ul class="text-gray-600 dark:text-gray-400">
+                  <li class="mb-4">
+                    <p class="text-xs">Home</p>
+                  </li>
+                  <li class="mb-4">
+                    <p class="text-xs">About Us</p>
+                  </li>
+                  <li class="mb-4">
+                    <p class="text-xs">Cases</p>
+                  </li>
+                  <li class="mb-4">
+                    <p class="text-xs">Blog</p>
+                  </li>
+                  <li class="mb-4">
+                    <p class="text-xs">Contact Us</p>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact Now</h2>
+              <ul class="text-gray-600 dark:text-gray-400">
+                  <li class="mb-4">
+                      <p class="text-xs">555 4th 5t NW, Washington
+                        DC 20530, United States</p>
+                  </li>
+                  <li class="mb-4">
+                      <p class="text-xs">+88 01750 000 000
+                        +88 01750 000 000</p>
+                  </li>
+                  <li class="mb-4">
+                      <p class="text-xs">info@gmail.com
+                        info@gmail.com</p>
+                  </li>
+                  
+              </ul>
+          </div>
+          <div class="col-span-2">
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Subscribe</h2>
+              <ul class="text-gray-600 dark:text-gray-400">
+                  <li class="mb-4">
+                      <p class="text-xs">Subscribe for our latest & Articles. We Won't Give You Spam Mails</p>
+                  </li>
+                  <li class="flex justify-around items-center mx-6">
+                    <label class="relative block w-full">
+                      <span class="sr-only">Search</span>
+                      <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+                      </span>
+                      <input class="  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+                    </label>
+                    <button class="text-xs py-2 text-white bg-btncolor rounded-md my-3 w-[40px] right-10 h-[42px] absolute"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 -rotate-45 ml-2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                    </svg></button>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+</footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+</body>
+</html>
