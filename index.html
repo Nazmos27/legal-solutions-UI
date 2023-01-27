@@ -159,11 +159,11 @@
 
   <section>
     <div>
-      <p class="font-bold text-xl text-gray-700 text-center">What Our Client Say</p>
-      <p class="pb-4 text-sm text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+      <p class="md:text-3xl md:pb-8 font-bold text-xl text-gray-700 text-center">What Our Client Say</p>
+      <p class="md:px-72 md:pb-20 md:text-sm pb-4 text-sm text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
     </div>
     <!-- caroussal section -->
-    <div class="mx-4 my-3">
+    <div class="md:mx-44 mx-4 my-3">
       
       <div id="indicators-carousel" class="relative rounded-lg" data-carousel="static">
         <!-- Carousel wrapper -->
@@ -183,20 +183,20 @@
         </div>
         <!-- Slider indicators -->
         <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-7 h-1 rounded-full md:bg-white/50" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-7 h-1 rounded-full md:bg-white/50" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-7 h-1 rounded-full md:bg-white/50" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
         </div>
         <!-- Slider controls -->
         <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
             <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                 <span class="sr-only">Previous</span>
             </span>
         </button>
         <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
             <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 <span class="sr-only">Next</span>
             </span>
         </button>
@@ -210,12 +210,12 @@
 
   <div class="mx-4 my-20">
     <div class="space-y-2">
-      <p class="font-bold text-xl text-gray-700 text-center">Frequently Asked Any Question</p>
-      <p class="px-4 pb-4 text-sm text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+      <p class="md:text-3xl md:pb-8 font-bold text-xl text-gray-700 text-center">Frequently Asked Any Question</p>
+      <p class="md:px-72 md:pb-20 md:text-sm px-4 pb-4 text-sm text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
     </div>
-    <div class="flex flex-col-reverse ">
+    <div class="md:flex md:flex-row md:mx-32 flex flex-col-reverse ">
       <div class="accordion" id="accordionExample">
-        <div class="accordion-item bg-white border border-gray-200">
+        <div class="accordion-item md:w-[500px] bg-white border border-gray-200">
           <h2 class="accordion-header mb-0" id="headingOne">
             <button class="
               accordion-button
@@ -233,26 +233,21 @@
               focus:outline-none
             " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
               aria-controls="collapseOne">
-              Accordion Item #1
+              What Is The Difference Between Flexbox And Grid?
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
             data-bs-parent="#accordionExample">
             <div class="accordion-body py-4 px-5">
-              <strong>This is the first item's accordion body.</strong> It is shown by default,
-              until the collapse plugin adds the appropriate classes that we use to style each
-              element. These classes control the overall appearance, as well as the showing and
-              hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-              our default variables. It's also worth noting that just about any HTML can go within
-              the <code>.accordion-body</code>, though the transition does limit overflow.
+              The CSS Flexbox offers a one-dimensional layout. It is helpful in allocating and aligning the space among items in a container (made of grids). It works with all kinds of display devices and screen sizes.
+              On the other hand, CSS Grid Layout, is a two-dimensional grid-based layout system with rows and columns, making it easier to design web pages without having to use floats and positioning. Like tables, grid layout allow us to align elements into columns and rows.
             </div>
           </div>
         </div>
-        <div class="accordion-item bg-white border border-gray-200">
+        <div class="accordion-item md:w-[500px] bg-white border border-gray-200">
           <h2 class="accordion-header mb-0" id="headingTwo">
             <button class="
               accordion-button
-              collapsed
               relative
               flex
               items-center
@@ -265,20 +260,17 @@
               rounded-none
               transition
               focus:outline-none
-            " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+            " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
               aria-controls="collapseTwo">
-              Accordion Item #2
+              What Is The Purpose of Mediaquery in Website?
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample">
             <div class="accordion-body py-4 px-5">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default,
-              until the collapse plugin adds the appropriate classes that we use to style each
-              element. These classes control the overall appearance, as well as the showing and
-              hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-              our default variables. It's also worth noting that just about any HTML can go within
-              the <code>.accordion-body</code>, though the transition does limit overflow.
+              Media queries are a key part of responsive web design, as they allow you to create different layouts depending on the size of the viewport, but they can also be used to detect other things about the environment your site is running on,
+              The internal method includes adding the 'style' tag to the 'head' tag of the 'HTML' file, and creating the media query within the parameters of the 'style' tag.
+              The @media CSS at-rule can be used to apply part of a style sheet based on the result of one or more media queries
             </div>
           </div>
         </div>
@@ -301,23 +293,50 @@
               focus:outline-none
             " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
               aria-controls="collapseThree">
-              Accordion Item #3
+              What Is CSS Box model And How Does It Work?
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
             data-bs-parent="#accordionExample">
             <div class="accordion-body py-4 px-5">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default,
-              until the collapse plugin adds the appropriate classes that we use to style each
-              element. These classes control the overall appearance, as well as the showing and
-              hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-              our default variables. It's also worth noting that just about any HTML can go within
-              the <code>.accordion-body</code>, though the transition does limit overflow.
+              The CSS box model is essentially a box that wraps around every HTML element.
+              The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. It can be used as a toolkit for customizing the layout of different elements. The web browser renders every element as a rectangular box according to the CSS box model
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-white border border-gray-200">
+          <h2 class="accordion-header mb-0" id="headingFour">
+            <button class="
+              accordion-button
+              collapsed
+              relative
+              flex
+              items-center
+              w-full
+              py-4
+              px-5
+              text-base text-gray-800 text-left
+              bg-white
+              border-0
+              rounded-none
+              transition
+              focus:outline-none
+            " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+              aria-controls="collapseFour">
+              What is Semantic Tag
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body py-4 px-5">
+              Semantic HTML, also known as semantic markup, refers to the use of HTML tags that convey the meaning—or semantics—of the content contained within them.
+              By adding semantic HTML tags to your pages, you provide additional information that helps define the roles and relative importance of the different parts of your page.
+              (As opposed to non-semantic HTML, which uses tags that don't directly convey meaning.)
             </div>
           </div>
         </div>
       </div>
-      <img src="./images/faq.png" alt="" class="pb-4">
+      <img src="./images/faq.png" alt="" class="pb-4 md:w-1/2">
     </div>
 
   </div>
@@ -326,66 +345,69 @@
 
   <div>
     <div>
-      <p class="font-bold text-xl text-gray-700 text-center">Frequently Asked Any Question</p>
-      <p class="px-4 pb-4 text-sm text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+      <p class="md:text-3xl md:pb-8 font-bold text-xl text-gray-700 text-center">Frequently Asked Any Question</p>
+      <p class="md:px-72 md:pb-20 md:text-sm px-4 pb-4 text-sm text-gray-700 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    </div >
+    <div class="md:flex md:pl-52">
+      <div class="md:grid md:grid-cols-2 md:h-72 md:w-72 md:px-0   grid grid-cols-2 px-10">
+        <div class=" border-gray-400 border-r-2 border-b-2 h-36 w-36">
+          <img src="./images/location.png" alt="" class="mx-auto my-2">
+          <p class="text-center">Adress</p>
+          <p class="px-2 pb-4 text-xs text-gray-700 text-center">A108 Adam Street,
+            New York, NY 535022</p>
+        </div>
+        <div class=" border-gray-400 border-b-2  h-36 w-36">
+          <img src="./images/call.png" alt="" class="mx-auto my-2">
+          <p class="text-center">Call Us</p>
+          <p class="px-2 pb-4 text-xs text-gray-700 text-center">A108 Adam Street,
+            New York, NY 535022</p>
+        </div>
+        <div class=" border-gray-400 border-r-2 h-36 w-36">
+          <img src="./images/email.png" alt="" class="mx-auto my-2">
+          <p class="text-center">Email Us</p>
+          <p class="px-2 pb-4 text-xs text-gray-700 text-center">A108 Adam Street,
+            New York, NY 535022</p>
+        </div>
+        <div class="border-gray-400  h-36 w-36">
+          <img src="./images/time.png" alt="" class="mx-auto my-2">
+          <p class="text-center">Working Hours</p>
+          <p class="px-2 pb-4 text-xs text-gray-700 text-center">A108 Adam Street,
+            New York, NY 535022</p>
+        </div>
+      </div>
+      <div class="md:w-1/2 space-y-4 py-6">
+        <label class="relative block w-3/4 mx-auto">
+          <span class="sr-only">Search</span>
+          <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+            <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+          </span>
+          <input class="  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Your Name" type="text" name="search"/>
+        </label>
+        <label class="relative block w-3/4 mx-auto">
+          <span class="sr-only">Search</span>
+          <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+            <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+          </span>
+          <input class="  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Your Email" type="text" name="search"/>
+        </label>
+        <label class="relative block w-3/4 mx-auto">
+          <span class="sr-only">Search</span>
+          <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+            <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+          </span>
+          <input class="  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Subject" type="text" name="search"/>
+        </label>
+        <label class="relative block w-3/4 mx-auto">
+          <span class="sr-only">Search</span>
+          <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+            <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+          </span>
+          <input class="  placeholder:text-slate-400 block bg-white w-full h-24 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Message" type="text" name="search"/>
+        </label>
+        <button class=" py-2 text-white bg-btncolor rounded-md ml-11 my-3 w-3/4">Send Messeges</button>
+      </div>
     </div>
-    <div class="grid grid-cols-2 px-10">
-      <div class="border-gray-400 border-r-2 border-b-2 h-36 w-36">
-        <img src="./images/location.png" alt="" class="mx-auto my-2">
-        <p class="text-center">Adress</p>
-        <p class="px-2 pb-4 text-xs text-gray-700 text-center">A108 Adam Street,
-          New York, NY 535022</p>
-      </div>
-      <div class="border-gray-400 border-b-2  h-36 w-36">
-        <img src="./images/call.png" alt="" class="mx-auto my-2">
-        <p class="text-center">Call Us</p>
-        <p class="px-2 pb-4 text-xs text-gray-700 text-center">A108 Adam Street,
-          New York, NY 535022</p>
-      </div>
-      <div class="border-gray-400 border-r-2 h-36 w-36">
-        <img src="./images/email.png" alt="" class="mx-auto my-2">
-        <p class="text-center">Email Us</p>
-        <p class="px-2 pb-4 text-xs text-gray-700 text-center">A108 Adam Street,
-          New York, NY 535022</p>
-      </div>
-      <div class="border-gray-400  h-36 w-36">
-        <img src="./images/time.png" alt="" class="mx-auto my-2">
-        <p class="text-center">Working Hours</p>
-        <p class="px-2 pb-4 text-xs text-gray-700 text-center">A108 Adam Street,
-          New York, NY 535022</p>
-      </div>
-    </div>
-    <div class="space-y-4 py-6">
-      <label class="relative block w-3/4 mx-auto">
-        <span class="sr-only">Search</span>
-        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-          <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
-        </span>
-        <input class="  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Your Name" type="text" name="search"/>
-      </label>
-      <label class="relative block w-3/4 mx-auto">
-        <span class="sr-only">Search</span>
-        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-          <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
-        </span>
-        <input class="  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Your Email" type="text" name="search"/>
-      </label>
-      <label class="relative block w-3/4 mx-auto">
-        <span class="sr-only">Search</span>
-        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-          <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
-        </span>
-        <input class="  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Subject" type="text" name="search"/>
-      </label>
-      <label class="relative block w-3/4 mx-auto">
-        <span class="sr-only">Search</span>
-        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-          <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
-        </span>
-        <input class="  placeholder:text-slate-400 block bg-white w-full h-24 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Message" type="text" name="search"/>
-      </label>
-      <button class=" py-2 text-white bg-btncolor rounded-md ml-11 my-3 w-3/4">Send Messeges</button>
-    </div>
+
   </div>
 
 
